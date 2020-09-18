@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<zk>
+	<config-name>security-app</config-name>
+
+	<!--enable websocket support in ZK 8.5.1 (ZK-3799) -->
+	<!-- <listener> <listener-class>org.zkoss.zkmax.au.websocket.WebSocketWebAppInit</listener-class> 
+		</listene -->
+	
+
+	<library-property>
+		<name>org.zkoss.theme.preferred</name>
+		<value>atlantic</value> 
+	</library-property>
+
+	<!-- <richlet>
+		<richlet-name>ExampleRichlet</richlet-name>your preferred name
+		<richlet-class>org.zkoss.zkspringboot.demo.richlet.ExampleRichlet
+		</richlet-class>your class name, of course
+	</richlet>
+	<richlet-mapping>
+		<richlet-name>ExampleRichlet</richlet-name>
+		<url-pattern>/richlet/example</url-pattern>
+	</richlet-mapping> -->
+</zk>
