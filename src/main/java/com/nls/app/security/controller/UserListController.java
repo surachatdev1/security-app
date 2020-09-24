@@ -4,6 +4,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 import org.zkoss.zk.ui.Component;
+import org.zkoss.zk.ui.Executions;
 import org.zkoss.zk.ui.select.SelectorComposer;
 import org.zkoss.zk.ui.select.annotation.Listen;
 import org.zkoss.zk.ui.select.annotation.VariableResolver;
@@ -25,6 +26,7 @@ public class UserListController extends SelectorComposer<Component> {
 	
 	@Wire private Button btnSearch;
 	@Wire private Listbox listData;
+	@Wire private Button btnAdd;
 	
 	@WireVariable private UserService userService;
 	
@@ -41,6 +43,11 @@ public class UserListController extends SelectorComposer<Component> {
 	@Listen("onClick=#btnSearch")
 	public void clickSearch() {
 		renderListbox(userService.getUsers());
+	}
+	
+	@Listen("onClick=#btnAdd")
+	public void addClick() {
+		Executions.sendRedirect("/users/form");
 	}
 	private void renderListbox(List<User> users) {
 		listData.setModel(new ListModelList<User>(users));

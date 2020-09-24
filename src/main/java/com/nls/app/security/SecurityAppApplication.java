@@ -21,5 +21,9 @@ public class SecurityAppApplication {
 	public String userListPage() {
 		return "user/user-list";
 	}
-
+	
+	@GetMapping("/users/form")
+	public String userFormPage() {
+		return "user/user-form";
+	}
 }
