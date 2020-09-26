@@ -1,5 +1,5 @@
 
-<window id="userForm" width="100%" height="100%" title="hello"
+<window id="userform" width="50%" height="50%" title="hello" closable="true" 
 	apply="com.nls.app.security.controller.UserFormController">
 	<vlayout>
 		<label value="userform" />

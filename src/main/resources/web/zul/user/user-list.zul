@@ -15,6 +15,7 @@
 					label="id" />
 				<listheader style="text-align:center" label="username" />
 				<listheader style="text-align:center" label="fullname" />
+				<listheader style="text-align:center" label="action" />
 			</listhead>
 		</listbox>
 
